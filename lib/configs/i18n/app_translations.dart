@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:real_estate/configs/i18n/er_ER.dart';
+import 'package:akarbook/configs/i18n/er_ER.dart';
 
 
 class AppTranslations extends Translations {
