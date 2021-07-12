@@ -16,7 +16,7 @@ const kColorRed = Color(0xFFF3090B);
 const kSurfaceWhite = Color(0xFFFFFBFA);
 
 /// color for theme
-const kLightPrimary = Color(0xfffcfcff);
+const kLightPrimary = Color(0XFFF9641A);
 const kLightAccent = Color(0xFF546E7A);
 const kDarkAccent = Color(0xffF4F5F5);
 

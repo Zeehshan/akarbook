@@ -7,6 +7,7 @@ import 'configs/i18n/app_translations.dart';
 import 'configs/loger.dart';
 import 'configs/routes/app_pages.dart';
 import 'configs/themes/app_themes.dart';
+import 'ui/pages/home/home_page.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
       translations: AppTranslations(),
       initialRoute: AppPages.initial,
       getPages: AppPages.routes,
+      home: HomePage(),
     );
   }
 }
