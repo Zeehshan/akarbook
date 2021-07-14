@@ -1,4 +1,4 @@
-import 'package:real_estate/configs/app_environment.dart';
+import 'package:akarbook/configs/app_environment.dart';
 
 final String apiVersion = "";
 

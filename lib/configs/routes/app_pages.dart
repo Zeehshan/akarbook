@@ -1,5 +1,5 @@
+import 'package:akarbook/ui/pages/home/widgets/tabs.dart';
 import 'package:get/get.dart';
-import 'package:real_estate/ui/pages/pages.dart';
 
 part 'app_routes.dart';
 
