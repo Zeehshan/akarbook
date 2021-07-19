@@ -23,7 +23,10 @@ class AppConst {
   ];
 
   final List<String> gridImages = [
-
+    "images/business.jpg",
+    "images/building.jpg",
+    "images/help.jpg",
+    "images/parks.jpg"
   ];
 
 }

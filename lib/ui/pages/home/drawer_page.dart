@@ -10,7 +10,7 @@ class DrawerPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   height: 175,
@@ -32,7 +32,7 @@ class DrawerPage extends StatelessWidget {
                           size: 18),
                       Row(
                         children: [
-                          CommonText("Logout",
+                          CommonText("خروج",
                               color: Colors.white,
                               fontWeight: FontWeight.w800,
                               size: 18),
@@ -77,31 +77,31 @@ class DrawerPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       DrawerMenuItem(
-                          text: "Home", icon: Icons.home, onTap: () {}),
+                          text: "الرئيسية", icon: Icons.home, onTap: () {}),
                       DrawerMenuItem(
-                          text: "Inbox",
+                          text: "للإيجار",
                           icon: Icons.queue_outlined,
                           onTap: () {}),
                       DrawerMenuItem(
-                          text: "Date",
+                          text: "للبيع",
                           icon: Icons.date_range_outlined,
                           onTap: () {}),
                       DrawerMenuItem(
-                          text: "Search", icon: Icons.search, onTap: () {}),
+                          text: "للإستثمار", icon: Icons.search, onTap: () {}),
                       DrawerMenuItem(
-                          text: "People",
+                          text: "خدمات عقارية",
                           icon: Icons.people_alt_rounded,
                           onTap: () {}),
                       DrawerMenuItem(
-                          text: "Profile",
+                          text: "وكلاء عقارات",
                           icon: Icons.person_pin,
                           onTap: () {}),
                       DrawerMenuItem(
-                          text: "Help", icon: Icons.looks_one, onTap: () {}),
+                          text: "من نحن", icon: Icons.help, onTap: () {}),
                       DrawerMenuItem(
-                          text: "Email", icon: Icons.email, onTap: () {}),
+                          text: "اتصل بنا", icon: Icons.email, onTap: () {}),
                       DrawerMenuItem(
-                          text: "Logout",
+                          text: "المدونة العقارية",
                           icon: Icons.local_gas_station,
                           onTap: () {}),
                     ],
@@ -175,34 +175,28 @@ class DrawerMenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 0, right: 20),
-            child: InkWell(
-              child: Row(
-                children: [
-                  CommonText("$text",
-                      color: Colors.black87,
-                      fontWeight: FontWeight.w800,
-                      fontFamily: "Cairo",
-                      size: 20),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Icon(
-                    icon,
-                    color: Colors.black,
-                    size: 25,
-                  ),
-                ],
-              ),
+    return Padding(
+      padding: const EdgeInsets.only(top: 5, right: 20,),
+      child: InkWell(
+        onTap: onTap,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            CommonText("$text",
+                color: Colors.black,
+                fontWeight: FontWeight.w600,
+                fontFamily: "Cairo",
+                size: 18),
+            SizedBox(
+              width: 30,
             ),
-          )
-        ],
+            Icon(
+              icon,
+              color: Colors.black,
+              size: 20,
+            ),
+          ],
+        ),
       ),
     );
   }

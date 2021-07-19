@@ -15,6 +15,7 @@ class AppTranslations extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'er': er_ER,
+        'err':er_TYPES
       };
 
 }
