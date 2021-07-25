@@ -23,12 +23,24 @@ class HomeWidget extends StatelessWidget {
           SizedBox(
             height: Get.height,
             child: Stack(alignment: Alignment.topCenter, children: [
+              paint,
               // TrianglePainter,
-              Container(
-                margin: EdgeInsets.only(bottom: Get.height / 3),
-                height: !Screen.isLandscape(context)? MediaQuery.of(context).size.height - 350:MediaQuery.of(context).size.width - 350,
-                color: Color(0XFF002247),
-              ),
+              // CustomPaint(
+              //   painter: TrianglePainter(
+              //     strokeColor: Colors.blue,
+              //     strokeWidth: 10,
+              //     paintingStyle: PaintingStyle.fill,
+              //   ),
+              //   child: Container(
+              //     height: 180,
+              //     width: 200,
+              //   ),
+              // ),
+              // Container(
+              //   margin: EdgeInsets.only(bottom: Get.height / 3),
+              //   height: !Screen.isLandscape(context)? MediaQuery.of(context).size.height - 350:MediaQuery.of(context).size.width - 350,
+              //   color: Color(0XFF002247),
+              // ),
               Padding(
                 padding: const EdgeInsets.only(top: 10),
                 child: SingleChildScrollView(

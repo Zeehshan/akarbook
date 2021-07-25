@@ -3,12 +3,46 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 final WIDTH = Get.width;
-// Widget paint =  CustomPaint(
-// size: Size(WIDTH,(WIDTH*0.625).toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-// painter: RPSCustomPainter(),
-// );
-//
-//
+Widget paint =
+CustomPaint(
+// size: Size(100,WIDTH), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+painter: RPSCustomPainter(),
+);
+
+class RPSCustomPainter extends CustomPainter{
+
+  @override
+  void paint(Canvas canvas, Size size) {
+
+
+
+    Paint paint_0 = new Paint()
+      ..color = Color.fromARGB(255, 33, 150, 243)
+      ..style = PaintingStyle.fill
+      ..strokeWidth = 1;
+
+
+    Path path_0 = Path();
+    path_0.moveTo(size.width,size.height*0.1000000);
+    path_0.lineTo(size.width,size.height*0.0960000);
+    path_0.lineTo(size.width,size.height*0.3980000);
+    path_0.lineTo(size.width*0.2487500,size.height*0.5960000);
+    path_0.lineTo(size.width*0.2512500,size.height*0.1000000);
+    path_0.close();
+
+    canvas.drawPath(path_0, paint_0);
+
+
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
+  }
+
+}
+
+
 // class RPSCustomPainter extends CustomPainter{
 //
 //   @override
@@ -19,11 +53,11 @@ final WIDTH = Get.width;
 //     Paint paint_0 = new Paint()
 //       ..color = Color.fromARGB(255, 33, 150, 243)
 //       ..style = PaintingStyle.stroke
-//       ..strokeWidth = 1;
+//       ..strokeWidth = 10;
 //
 //
 //     Path path_0 = Path();
-//     path_0.moveTo(size.width,size.height*0.1000000);
+//     path_0.moveTo(size.width*.1850000,size.height*0.1000000);
 //     path_0.lineTo(size.width*0.1850000,size.height*0.7000000);
 //     path_0.lineTo(size.width*0.5600000,size.height*0.4040000);
 //     path_0.lineTo(size.width*0.5600000,size.height*0.0980000);
@@ -61,8 +95,8 @@ class TrianglePainter extends CustomPainter {
   Path getTrianglePath(double x, double y) {
     return Path()
       ..moveTo(0, y)
-      ..lineTo(x / 2, 0)
       ..lineTo(x, y)
+      ..lineTo(0, y/100)
       ..lineTo(0, y);
   }
 
@@ -82,9 +116,9 @@ class HomePage extends StatelessWidget {
         child: RawMaterialButton(
           onPressed: () {},
           child: CustomPaint(
-            painter: TrianglePainter(
+            painter:  TrianglePainter(
               strokeColor: Colors.blue,
-              strokeWidth: 10,
+              strokeWidth: 20,
               paintingStyle: PaintingStyle.fill,
             ),
             child: Container(
