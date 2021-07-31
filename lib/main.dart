@@ -1,4 +1,3 @@
-import 'package:akarbook/ui/pages/home/widgets/tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';

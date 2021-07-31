@@ -1,7 +1,7 @@
 import 'package:akarbook/ui/widget/text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+import 'package:get/get.dart';
 class DrawerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -77,31 +77,31 @@ class DrawerPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       DrawerMenuItem(
-                          text: "الرئيسية", icon: Icons.home, onTap: () {}),
+                          text: "MAIN".tr, icon: Icons.home, onTap: () {}),
                       DrawerMenuItem(
-                          text: "للإيجار",
+                          text: "FOR_RENT".tr,
                           icon: Icons.queue_outlined,
                           onTap: () {}),
                       DrawerMenuItem(
-                          text: "للبيع",
+                          text: "FOR_SALE".tr,
                           icon: Icons.date_range_outlined,
                           onTap: () {}),
                       DrawerMenuItem(
-                          text: "للإستثمار", icon: Icons.search, onTap: () {}),
+                          text: "FOR_INVESTMENT".tr, icon: Icons.search, onTap: () {}),
                       DrawerMenuItem(
-                          text: "خدمات عقارية",
+                          text: "REAT_ESTATE_SERVICES".tr,
                           icon: Icons.people_alt_rounded,
                           onTap: () {}),
                       DrawerMenuItem(
-                          text: "وكلاء عقارات",
+                          text: "REAT_ESTATE_AGENTS".tr,
                           icon: Icons.person_pin,
                           onTap: () {}),
                       DrawerMenuItem(
-                          text: "من نحن", icon: Icons.help, onTap: () {}),
+                          text: "ABOUT_US".tr, icon: Icons.help, onTap: () {}),
                       DrawerMenuItem(
-                          text: "اتصل بنا", icon: Icons.email, onTap: () {}),
+                          text: "CALL_US".tr, icon: Icons.email, onTap: () {}),
                       DrawerMenuItem(
-                          text: "المدونة العقارية",
+                          text: "REAT_ESTATE_BLOG".tr,
                           icon: Icons.local_gas_station,
                           onTap: () {}),
                     ],

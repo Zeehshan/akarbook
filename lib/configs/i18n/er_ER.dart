@@ -1,9 +1,12 @@
 const Map<String, String> er_ER =  {
-   'HOME_PAGE' : 'الصفحة الرئيسية'
-};
-const Map<String, String> er_ERR =  {
-   'HOME_PAGE' : 'home page screen'
-};
-const Map<String, String> er_TYPES =  {
-   'Important_Types' : 'أهم الأقسام '
+   'HOME_PAGE' : 'الصفحة الرئيسية',
+   'MAIN' : 'الرئيسية',
+   'FOR_RENT' : 'للإيجار',
+   'FOR_SALE' : 'للبيع',
+   'FOR_INVESTMENT' : 'للإستثمار',
+   'REAT_ESTATE_SERVICES' : 'خدمات عقارية',
+   'REAT_ESTATE_AGENTS' : 'وكلاء عقارات',
+   'ABOUT_US' : 'من نحن',
+   'CALL_US' : 'اتصل بنا',
+   'REAT_ESTATE_BLOG' : 'المدونة العقارية'
 };
