@@ -8,5 +8,7 @@ const Map<String, String> er_ER =  {
    'REAT_ESTATE_AGENTS' : 'وكلاء عقارات',
    'ABOUT_US' : 'من نحن',
    'CALL_US' : 'اتصل بنا',
-   'REAT_ESTATE_BLOG' : 'المدونة العقارية'
+   'REAT_ESTATE_BLOG' : 'المدونة العقارية',
+   'VIEW_ALL' : 'عرض الكل',
+   'THE_MOST_IMPORTANT_SECTION' : 'أهم الأقسام'
 };

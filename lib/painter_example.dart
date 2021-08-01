@@ -23,11 +23,11 @@ class RPSCustomPainter extends CustomPainter{
 
 
     Path path_0 = Path();
-    path_0.moveTo(size.width,size.height*0.1000000);
-    path_0.lineTo(size.width,size.height*0.0960000);
+    // path_0.moveTo(size.width*0.0,size.height*0.00);
+    path_0.lineTo(size.width,size.height*0.00);
     path_0.lineTo(size.width,size.height*0.3980000);
-    path_0.lineTo(size.width*0.2487500,size.height*0.5960000);
-    path_0.lineTo(size.width*0.2512500,size.height*0.1000000);
+    path_0.lineTo(size.width*0.0,size.height*0.5960000);
+    path_0.lineTo(size.width*0.0,size.height*0.1000000);
     path_0.close();
 
     canvas.drawPath(path_0, paint_0);
@@ -108,26 +108,4 @@ class TrianglePainter extends CustomPainter {
   }
 }
 
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: RawMaterialButton(
-          onPressed: () {},
-          child: CustomPaint(
-            painter:  TrianglePainter(
-              strokeColor: Colors.blue,
-              strokeWidth: 20,
-              paintingStyle: PaintingStyle.fill,
-            ),
-            child: Container(
-              height: 180,
-              width: 200,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
+

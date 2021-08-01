@@ -24,7 +24,7 @@ class AppEnvironment {
   //////////////////////////////////////////////////////////////////////////
 
   // API / backend base urls
-  static const productionApiBaseUrl = '';
+  static const productionApiBaseUrl = 'https://akarbook.com/';
   static const developmentApiBaseUrl = '';
 
   // API base url based on current environment

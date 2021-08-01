@@ -1,0 +1,1 @@
+export 'property/property_model.dart';

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of 'widgets.dart';
 
 class CommonText extends StatelessWidget {
   final String text;
@@ -34,7 +34,6 @@ class CommonText extends StatelessWidget {
         color: color.withOpacity(colorOpacity),
         fontSize: size,
         fontWeight: fontWeight,
-        fontFamily: fontFamily,
       ),
     );
   }

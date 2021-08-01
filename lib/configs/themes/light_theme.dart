@@ -1,7 +1,7 @@
 part of 'app_themes.dart';
 
 TextTheme buildTextTheme(TextTheme base, String language,
-    [String font = 'SF Pro Display']) {
+    [String font = 'Cairo']) {
   var newBase = kTextTheme(base);
   return newBase
       .copyWith(
@@ -81,7 +81,7 @@ const ColorScheme kColorScheme = ColorScheme(
   brightness: Brightness.light,
 );
 
-ThemeData buildLightTheme(String language, [String fontFamily = 'Roboto']) {
+ThemeData buildLightTheme(String language, [String fontFamily = 'Cairo']) {
   final base = ThemeData.light().copyWith();
 
   return base.copyWith(
@@ -135,4 +135,4 @@ ThemeData buildLightTheme(String language, [String fontFamily = 'Roboto']) {
 }
 
 ThemeData lightTheme =
-    buildLightTheme('en').copyWith(primaryColor: HexColor('#F04141'));
+    buildLightTheme('er').copyWith(primaryColor: HexColor('#F04141'));
